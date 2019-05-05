@@ -1,3 +1,10 @@
+import map from '1-liners/module/map'; // The lightweight, recommended way:
+
+
+// Sometimes practical:
+// import { map, filter } from '1-liners/module';
+
+
 const get = (path, obj) => path.split('.').reduce((acc, current) => acc && acc[current], obj);
 const setObj = (obj, key, val) => {obj = obj || {}; obj[key] = val; return obj;};
 
